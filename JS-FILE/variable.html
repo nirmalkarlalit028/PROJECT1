@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+       background-color: #ebc857;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      /* HEADER START */
+
+      header {
+        display: flex;
+      
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 99%;
+        height: 50px;
+        background-color: #16161618;
+        padding: 8px;
+      }
+
+      .logoimg {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+
+      #navi {
+        display: flex;
+      }
+      .navtitle {
+        margin: 40px;
+        font-size: 1.2rem;
+        color: #3b2806ee;
+
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+      }
+      .navtitle:hover {
+       box-shadow: 0px 0px 5px 1px rgb(255, 228, 155);
+       border: solid 1px #ffef88;
+        transform: scale(1.1);
+      }
+
+      .opnbtn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: solid 1px;
+        padding: 5px;
+        animation: openbtn 5s infinite;
+         color: rgb(230, 230, 230);
+        background-color: transparent;
+      }
+      .opnbtn:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* HEADER END */
+      /* SIDEBAR START */
+      .sidebar {
+        /* width 0 krna hai */
+        width: 0px;
+        height: 99vh;
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+      }
+      .sidebarlogo {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 14px;
+      }
+      #doc {
+         color: #ffef88;
+      }
+  
+      .closebtn {
+        border: none;
+        font-size: 1.5rem;
+        animation: openbtn 5s infinite;
+        color: #ffef88;
+        background-color: transparent;
+      }
+      .closebtn:hover {
+        transform: scale(1.1);
+        /* box-shadow: 0px 0px 5px 1px #839977; */
+      }
+
+      li {
+        text-decoration: none;
+      }
+
+      .topicside {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 12px;
+        border: solid 1px;
+        padding: 5px;
+      }
+      .topicside:hover {
+        box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* SIDEBAR END */
+
+      /* MAIN PAGE START */
+
+      .title {
+        text-align: center;
+        color: #5b2c08;
+        text-transform: uppercase;
+      }
+       .subtitle {
+        color: #461502;
+      }
+      .theory {
+        color: #3b2806ee;
+        line-height: 2.5;
+        margin: 20px;
+        font-size: 1rem;
+        border: solid 1px #ffef88;
+        box-shadow: 0px 0px 30px 1px #ffef88;
+        /* background-color: #839977; */
+        border-radius: 8px;
+        width: 80%;
+        padding: 10px;
+        margin: 20px;
+        align-items: center;
+        text-align: justify;
+      }
+
+      .theory:hover {
+        transform: scale(1.1);
+      }
+
+      .heading {
+        color: #461502;
+        font-size: large;
+      }
+      .topic {
+        color: #321736;
+        font-size: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .DIAGRAM {
+        border: 1px solid #ffef88;
+        padding: 10px;
+        color: #3b2806ee;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+      .DIAGRAM:hover {
+        box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* MAIN PAGE END */
+
+      /* RESPONSIVE WINDOW */
+
+      @media ( max-width: 907px) {
+        .navtitle{
+          display: none;
+        }
+        .opnbtn{
+          display: block;
+        }
+      }
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logoimg"
+        src="Gemini_Generated_Image_a3u9gua3u9gua3u9.png"
+        alt=""
+      />
+      <ul>
+        <li id="navi">
+          <a class="navtitle" href="landingpage.html">HOME</a>
+          <a class="navtitle" href="datatype.html">DATA TYPE</a>
+          <a class="navtitle" href="operator.html">OPERATOR</a>
+          <a class="navtitle" href="method.html">METHOD</a>
+        </li>
+      </ul>
+      <button class="opnbtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- SIDEBAR START -->
+
+    <div class="sidebar">
+      <div class="sidebarlogo">
+        <h4 id="doc">NOTES :-</h4>
+        <button class="closebtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <li>
+        <a class="topicside" href="datatype.html">DATA TYPE</a>
+        <a class="topicside" href="operator.html">OPERATOR</a>
+        <a class="topicside" href="method.html">METHOD</a>
+        <a class="topicside" href="landingpage.html">HOME</a>
+        <!-- <a class="topic" href="method.html">METHOD</a> -->
+      </li>
+      <!-- <button >HOME</button> -->
+    </div>
+
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN PAGE START -->
+
+    <h1 class="title">Variable's</h1>
+
+    <p class="theory">
+      <strong class="subtitle">INFORMATION:-</strong> A JavaScript variable is a
+      named container for storing data values that can be used and potentially
+      modified throughout a program. Variables are declared using the keywords
+      <strong>let, const, or var</strong> .
+    </p>
+
+    <p class="theory">
+      <strong class="heading">1. var (The Old Way)</strong><br />
+      Introduced at the beginning of JavaScript, var is now generally avoided in
+      modern development due to its unpredictable behavior.
+
+      <br />
+      <strong class="topic">1. Function: Scoped:</strong> If declared inside a
+      function, it's available anywhere in that function. If declared outside,
+      it's global. <br />
+      <strong class="topic">2. Hoisting:</strong> You can use a var variable
+      before its declaration line without an error; it will just return
+      undefined. <br />
+      <strong class="topic">3. Redeclaration:</strong> You can redeclare the
+      same variable name multiple times in the same scope without the engine
+      complaining.
+      <br />
+      <strong class="heading">2. let (The Modern Standard)</strong><br />
+      Introduced in ES6 (2015), let is the preferred choice for variables that
+      need to change.
+      <br />
+      <strong class="topic">1. Block Scoped:</strong> It only exists within the
+      nearest pair of curly braces {} (like in an if statement or a for loop).
+      <br /><strong class="topic">2. Temporal Dead Zone:</strong> While
+      technically hoisted, you cannot access it before the line it is declared
+      on, or you will get a ReferenceError. <br /><strong class="topic"
+        >3. No Redeclaration:</strong
+      >
+      You cannot declare the same variable twice in the same scope using let.
+      <br />
+      <strong class="heading">3. const (For Constants)</strong> <br />
+      Also introduced in ES6, const is used for values that should not be
+      reassigned.
+      <br />
+      <strong class="topic">1. Immutable Binding:</strong> Once you assign a
+      value, you cannot point the variable to a new value (e.g., const x = 1; x
+      = 2; throws an error). <br /><strong class="topic"
+        >2. Object Mutation:</strong
+      >
+      While you can't reassign the variable itself, if it holds an array or
+      object, you can still modify the properties inside that object.
+      <br /><strong class="topic">3. Required Initializer:</strong> You must
+      assign a value at the exact moment you declare it.
+    </p>
+    <a class="DIAGRAM" href="vardiagram.html">DIAGRAM</a>
+
+    <!-- MAIN PAGE END -->
+
+    <script>
+      let openBtn = document.querySelector(".opnbtn");
+      let clsbtn = document.querySelector(".closebtn");
+      let sidbar = document.querySelector(".sidebar");
+
+      clsbtn.addEventListener("click", () => {
+        sidbar.style.width = "0px";
+        sidbar.style.transition = ".5s";
+      });
+
+      openBtn.addEventListener("click", () => {
+        sidbar.style.width = "250px";
+        sidbar.style.transition = ".5s";
+      });
+    </script>
+  </body>
+</html>

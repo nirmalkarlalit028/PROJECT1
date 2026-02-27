@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: #ebc857;
+        /* background-image: url(https://images.unsplash.com/photo-1710162734135-8dc148f53abe?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D); */
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      /* HEADER START */
+
+      header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 99%;
+        height: 50px;
+        background-color: #16161618;
+        padding: 8px;
+      }
+
+      .logoimg {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+
+      #navi {
+        display: flex;
+      }
+      .navtitle {
+        margin: 40px;
+        font-size: 1.2rem;
+        color: #3b2806ee;
+
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+      }
+      .navtitle:hover {
+        box-shadow: 0px 0px 5px 1px rgb(255, 228, 155);
+        border: solid 1px #ffef88;
+        transform: scale(1.1);
+      }
+
+      .opnbtn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: solid 1px;
+        padding: 5px;
+        animation: openbtn 5s infinite;
+        color: rgb(230, 230, 230);
+        background-color: transparent;
+      }
+      .opnbtn:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* HEADER END */
+      /* SIDEBAR START */
+      .sidebar {
+        /* width 0 krna hai */
+        width: 0px;
+        height: 99vh;
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+      }
+      .sidebarlogo {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 14px;
+      }
+      #doc {
+        color: #ffef88;
+      }
+
+      .closebtn {
+        border: none;
+        font-size: 1.5rem;
+        animation: openbtn 5s infinite;
+        color: #ffef88;
+        background-color: transparent;
+      }
+      .closebtn:hover {
+        transform: scale(1.1);
+      }
+
+      li {
+        text-decoration: none;
+      }
+
+      .topicside {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 12px;
+        border: solid 1px;
+        padding: 5px;
+      }
+      .topicside:hover {
+        box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* SIDEBAR END */
+
+      /* MAIN PAGE START */
+
+      .title {
+        text-align: center;
+        color: #5b2c08;
+        text-transform: uppercase;
+      }
+      .imgs {
+        display: flex;
+      }
+      .methodimg {
+        display: flex;
+        border-radius: 10px;
+        width: 300px;
+        margin: 15px;
+      }
+      .methodimg:hover {
+        transform: scale(1.3);
+      }
+
+      .subtitle {
+        color: #461502;
+      }
+      .theory {
+        color: #3b2806ee;
+        line-height: 2.5;
+        margin: 20px;
+        font-size: 1rem;
+        border: solid 1px #ffef88;
+        box-shadow: 0px 0px 30px 1px #ffef88;
+
+        border-radius: 8px;
+        width: 80%;
+        padding: 10px;
+        margin: 20px;
+        align-items: center;
+        text-align: justify;
+      }
+
+      .theory:hover {
+        transform: scale(1.1);
+      }
+
+      .heading {
+        color: #461502;
+        font-size: large;
+      }
+      .topic {
+        color: #321736;
+        font-size: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .DIAGRAM {
+        border: 1px solid white;
+        padding: 10px;
+        color: #3b2806ee;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+      .DIAGRAM:hover {
+        box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* MAIN PAGE END */
+
+            /* RESPONSIVE WINDOW */
+
+      @media ( max-width: 907px) {
+        .navtitle{
+          display: none;
+        }
+        .opnbtn{
+          display: block;
+        }
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logoimg"
+        src="Gemini_Generated_Image_a3u9gua3u9gua3u9.png"
+        alt=""
+      />
+      <ul>
+        <li id="navi">
+          <a class="navtitle" href="landingpage.html">HOME</a>
+          <a class="navtitle" href="datatype.html">DATA TYPE</a>
+          <a class="navtitle" href="operator.html">OPERATOR</a>
+          <a class="navtitle" href="variable.html">VARIABLE</a>
+        </li>
+      </ul>
+      <button class="opnbtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- SIDEBAR START -->
+
+    <div class="sidebar">
+      <div class="sidebarlogo">
+        <h4 id="doc">NOTES :-</h4>
+        <button class="closebtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <li>
+        <a class="topicside" href="datatype.html">DATA TYPE</a>
+        <a class="topicside" href="operator.html">OPERATOR</a>
+        <a class="topicside" href="variable.html">VARIABLE</a>
+        <a class="topicside" href="landingpage.html">HOME</a>
+      </li>
+      <!-- <button >HOME</button> -->
+    </div>
+
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN PAGE START -->
+
+    <h1 class="title">Method</h1>
+    <p class="theory">
+      <strong class="subtitle">INFORMATION:-</strong> A method in JavaScript is
+      a function that is stored as a property of an object. It defines the
+      behavior or actions an object can perform, operating on the data contained
+      within that object.
+    </p>
+
+    <p class="theory">
+      <strong class="heading">1. Method of String </strong><br />
+
+      <strong class="topic">1. Uppercase:</strong> In JavaScript, the main way
+      to convert a string to uppercase is the
+      <strong>toUpperCase()</strong> method. It's a built-in function for all
+      string values ​​and returns a new string (converting all lowercase (small)
+      letters to uppercase (capital) letters) without changing the original
+      string, because JavaScript strings are immutable. <br />
+      <strong class="topic">2. Lowercase:</strong>In JavaScript, the main way to
+      convert a string to lowercase is the
+      <strong>toLowerCase()</strong> method. It's a built-in function for all
+      string values ​​and returns a new string (converting all small/capital
+      letters to small letters) without changing the original string, because
+      JavaScript strings are immutable. <br />
+      <strong class="topic">3. Trim:</strong> The JavaScript
+      <strong>trim()</strong> method removes whitespace from both the beginning
+      and end of a string. It returns a new string and does not modify the
+      original one. <br />
+      <strong class="topic">4. CharAt:</strong> The
+      <strong>charAt()</strong> method in JavaScript returns a new string
+      consisting of the single character at the specified index within the
+      original string. <br />
+      <strong class="topic">5. Include:</strong> The
+      <strong>includes()</strong> method in JavaScript is a built-in function
+      used to determine whether an array contains a specific element or a string
+      contains a specific substring. It is case-sensitive and returns a boolean
+      value (true or false). <br />
+      <strong class="topic">6. Concat:</strong> The
+      <strong>concat()</strong> method in JavaScript is used to merge two or
+      more strings or arrays into a single, new entity. It is a non-mutating
+      method, meaning it does not change the original strings or arrays, but
+      instead returns a shallow copy containing the combined elements. <br />
+      <strong class="topic">7. Slice:</strong> The JavaScript
+      <strong>slice()</strong> method is used to extract a portion of an array
+      or a string and return it as a new array or new string, respectively,
+      (this method zero-based index, startIndex & endIndex) without modifying
+      the original source. This process creates a shallow copy of the selected
+      elements. <br />
+    </p>
+
+    <p class="theory">
+      <strong class="heading">2. Method of Array </strong><br />
+      <strong class="topic">1. Unshift:</strong> The JavaScript
+      <strong>unshift()</strong> method adds one or more elements to the
+      beginning of an array and returns the new length of the array. It modifies
+      the original array in place. <br />
+      <strong class="topic">2. Push:</strong> The JavaScript
+      <strong>push()</strong> method is used to add one or more elements to the
+      end of an array. It modifies the original array in place and returns the
+      new length of the array after the elements have been added. <br />
+      <strong class="topic">3. Shift:</strong> The
+      <strong>shift()</strong> method in JavaScript is an array method that
+      removes the first element from an array and returns that removed element.
+      This method modifies the original array and reduces its length by one.
+      <br />
+      <strong class="topic">4. Pop:</strong> The JavaScript
+      <strong>pop()</strong> method is used to remove the last element from an
+      array and returns that removed element. This method is a mutating method,
+      meaning it changes the original array's length and content. <br />
+      <strong class="topic">5. Foreach:</strong> The
+      <strong>foreach()</strong> method in JavaScript is an array iteration
+      method used to execute a provided function once for each element in an
+      array. It is primarily used for performing a side effect (e.g., logging to
+      the console, updating the DOM, summing values) rather than creating a new
+      array or returning a value. The method returns undefined. (this method not
+      return value) <br />
+      <strong class="topic">6. Map:</strong> The <strong>map()</strong> method
+      creates a new array populated with the results of calling a provided
+      callback function on every element in the original array. A crucial aspect
+      is that it does not modify the original array. (this method return the
+      value) <br />
+      <strong class="topic">7. Filter:</strong> The
+      <strong>filter()</strong> method is used to create a new array containing
+      only the elements from the original array that pass a specific condition
+      implemented by a provided callback function. It does not modify the
+      original array. <br />
+    </p>
+    <a class="DIAGRAM" href="methoddiagram.html">DIAGRAM</a>
+
+    <!-- MAIN PAGE END -->
+
+    <script>
+      let openBtn = document.querySelector(".opnbtn");
+      let clsbtn = document.querySelector(".closebtn");
+      let sidbar = document.querySelector(".sidebar");
+
+      clsbtn.addEventListener("click", () => {
+        sidbar.style.width = "0px";
+        sidbar.style.transition = ".5s";
+      });
+
+      openBtn.addEventListener("click", () => {
+        sidbar.style.width = "250px";
+        sidbar.style.transition = ".5s";
+      });
+    </script>
+  </body>
+</html>

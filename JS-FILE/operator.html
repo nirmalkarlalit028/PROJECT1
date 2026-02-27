@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0px;
+       background-color: #ebc857;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      /* HEADER START */
+
+      header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 99%;
+        height: 50px;
+        background-color: #16161618;
+        padding: 8px;
+      }
+
+      .logoimg {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+
+      #navi {
+        display: flex;
+      }
+      .navtitle {
+        margin: 40px;
+        font-size: 1.2rem;
+ color: #3b2806ee;
+
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+  }
+      .navtitle:hover {
+       box-shadow: 0px 0px 5px 1px rgb(255, 228, 155);
+       border: solid 1px #ffef88;
+        transform: scale(1.1);
+      }
+
+      .opnbtn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: solid 1px;
+        padding: 5px;
+        animation: openbtn 5s infinite;
+          color: rgb(230, 230, 230);
+        background-color: transparent;
+      }
+      .opnbtn:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* HEADER END */
+
+
+
+      /* SIDEBAR START */
+      .sidebar {
+        /* width 0 krna hai */
+        width: 0px;
+        height: 99vh;
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+      }
+      .sidebarlogo {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 14px;
+      }
+      #doc {
+       color: #ffef88;
+      }
+    
+      .closebtn {
+        border: none;
+        font-size: 1.5rem;
+        animation: openbtn 5s infinite;
+             color: #ffef88;
+        background-color: transparent;
+      }
+      .closebtn:hover {
+        transform: scale(1.1);
+        /* box-shadow: 0px 0px 5px 1px #839977; */
+      }
+      li {
+        text-decoration: none;
+      }
+
+      .topicside {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 12px;
+        border: solid 1px;
+        padding: 5px;
+      }
+      .topicside:hover {
+         box-shadow: 0px 0px 5px 1px #ffef88;
+      }
+
+      /* SIDEBAR END */
+
+      /* MAIN PAGE START */
+      
+      .info {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .title {
+        text-align: center;
+        color: #5b2c08;
+        /* color: rgb(30, 71, 21); */
+        text-transform: uppercase;
+      }
+      
+      .imgs {
+        display: flex;
+      }
+      .operatorimg {
+        display: flex;
+        border-radius: 25px;
+        width: 400px;
+        height: 200px;
+        margin: 15px;
+      }
+      .operatorimg:hover {
+        transform: scale(1.3);
+      }
+      .defination {
+        border: solid 2px;
+        /* background-color: beige; */
+      }
+      .theory {
+        /* color: #392c0e; */
+        color: #3b2806ee;
+        line-height: 2.5;
+        margin: 20px;
+        font-size: 1rem;
+        border: solid 1px #ffef88;
+        box-shadow: 0px 0px 30px 1px #ffef88;
+        /* background-color: #839977; */
+        border-radius: 8px;
+        width: 80%;
+        padding: 10px;
+        margin: 20px;
+        align-items: center;
+        text-align: justify;
+      }
+      
+      .theory:hover {
+        transform: scale(1.1);
+      }
+      
+      .heading {
+        color: #461502;
+      }
+      .topic {
+        color: #321736;
+        font-size: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .highlight {
+        color: #581111;
+      }
+      
+      .DIAGRAM{
+        border: 1px solid #ffef88;
+        padding: 10px;
+        color: #3b2806ee;
+        text-decoration: none;
+        border-radius: 8px;
+        
+      }
+      .DIAGRAM:hover{
+        box-shadow: 0px 0px 5px 1px #ffef88;  
+      }
+      /* MAIN PAGE END */
+
+            /* RESPONSIVE WINDOW */
+
+      @media ( max-width: 907px) {
+        .navtitle{
+          display: none;
+        }
+        .opnbtn{
+          display: block;
+        }
+      }
+
+      
+      </style>
+  </head>
+  <body>
+    <header>
+      <img
+      class="logoimg"
+      src="Gemini_Generated_Image_a3u9gua3u9gua3u9.png"
+      alt=""
+      />
+      <ul>
+        <li id="navi">
+          <a class="navtitle" href="landingpage.html">HOME</a>
+          <a class="navtitle" href="variable.html">VARIABLE</a>
+          <a class="navtitle" href="datatype.html">DATA TYPE</a>
+          <a class="navtitle" href="method.html">METHOD</a>
+        </li>
+      </ul>
+      <button class="opnbtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- SIDEBAR START -->
+
+    <div class="sidebar">
+      <div class="sidebarlogo">
+        <h4 id="doc">NOTES :-</h4>
+        <button class="closebtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <li>
+        <a class="topicside" href="variable.html">VARIABLE</a>
+        <a class="topicside" href="datatype.html">DATA TYPE</a>
+        <a class="topicside" href="method.html">METHOD</a>
+        <a class="topicside" href="landingpage.html">HOME</a>
+        <!-- <a class="topic" href="method.html">METHOD</a> -->
+      </li>
+      <!-- <button >HOME</button> -->
+    </div>
+
+    <!-- SIDEBAR END -->
+
+    <div class="info">
+      <h1 class="title">OPERATOR</h1>
+      
+      <p class="defination theory">
+        <strong class="heading">INFORMATION:-</strong>
+        In JavaScript, an operator is a special symbol or keyword used to
+        perform specific actions on values and variables (called operands).
+      </p>
+
+      <p class="theory">
+        <strong class="heading">1. Core Types of Operators</strong><br /><strong
+          class="topic"
+          >Arithmetic Operators: </strong
+        >Used for mathematical calculations. <br />
+        + (Addition), - (Subtraction), * (Multiplication), / (Division) <br />%
+        (Remainder/Modulus), ** (Exponentiation) <br />++ (Increment), --
+        (Decrement) <br /><strong class="topic">Assignment Operators:</strong>
+        Assign values to variables. <br />
+        = (Simple assignment) Compound assignments like (+=), (-=), (*=), (/=)
+        <br /><strong class="topic">Comparison (Relational) Operators:</strong>
+        Compare two values and return a Boolean (true or false).<br />
+        == (Equal), === (Strictly equal — checks both value and type) <br />
+        != (Not equal), !== (Strictly not equal) <br />
+        > (Greater than), < (Less than), >= (Greater than or equal), <= (Less
+        than or equal) <br />
+        > (Greater than), < (Less than), >= (Greater than or equal), <= (Less
+        than or equal)
+      </p>
+
+      <p class="theory">
+        <strong class="heading">Logical Operators:</strong> Used to combine or
+        invert Boolean logic. <br /><strong class="topic">
+          && (Logical AND):</strong
+        >
+        Returns true only if both sides are true <br />
+        <strong class="topic">|| (Logical OR):</strong> Returns true if at least
+        one side is true <br /><strong class="topic">! (Logical NOT):</strong>
+        Inverts the value (true becomes false) <br />
+        <strong class="topic">Conditional (Ternary) Operator:</strong> A
+        shorthand for if...else statements, taking three operands: condition ?
+        valueIfTrue : valueIfFalse.
+      </p>
+      <a class="DIAGRAM" href="opdiagram.html">DIAGRAM</a>
+    </div>
+
+    <script>
+      let openBtn = document.querySelector(".opnbtn");
+      let clsbtn = document.querySelector(".closebtn");
+      let sidbar = document.querySelector(".sidebar");
+
+      clsbtn.addEventListener("click", () => {
+        sidbar.style.width = "0px";
+        sidbar.style.transition = ".5s";
+      });
+
+      openBtn.addEventListener("click", () => {
+        sidbar.style.width = "250px";
+        sidbar.style.transition = ".5s";
+      });
+    </script>
+  </body>
+</html>

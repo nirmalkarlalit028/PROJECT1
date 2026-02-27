@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="js-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    
+
+    <!-- HEADER START  -->
+
+    <header>
+      <img
+        class="logoimg"
+        src="Gemini_Generated_Image_a3u9gua3u9gua3u9.png"
+        alt=""
+      />
+      <ul>
+        <li id="navi">
+          <a class="navtitle" href="variable.html">VARIABLE</a>
+          <a class="navtitle" href="datatype.html">DATA TYPE</a>
+          <a class="navtitle" href="operator.html">OPERATOR</a>
+          <a class="navtitle" href="method.html">METHOD</a>
+        </li>
+      </ul>
+    
+      <button class="opnbtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- HEADER END -->
+
+
+
+
+
+
+    <!-- SIDEBAR START -->
+
+    <div class="sidebar">
+      <div class="sidebarlogo">
+        <h4 id="doc">NOTES :-</h4>
+        <button class="closebtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <li>
+        <a class="topic" href="variable.html">VARIABLE</a>
+        <a class="topic" href="datatype.html">DATA TYPE</a>
+        <a class="topic" href="operator.html">OPERATOR</a>
+        <a class="topic" href="method.html">METHOD</a>
+      </li>
+    </div>
+
+    <!-- SIDEBAR END -->
+
+
+
+
+    <!-- MAIN-PAGE START  -->
+     
+    <div class="main">
+      <h1 class="center-text">JAVASCRIPT</h1>
+      <p class="text">
+        <strong>DEFINATION :-</strong><br />
+        JavaScript, the world's most popular programming language for web
+        development. JavaScript is a text-based scripting language used to make
+        web pages interactive. While HTML builds the structure and CSS adds the
+        design, JavaScript acts as the "brain" that tells the website how to
+        behave when a user interacts with it.
+      </p>
+      <div class="homebtns">
+  
+        <a class="HOME" href="../index.html">HOME</a>
+        <!-- <a class="HOME" href="../index.html">BACK-END</a> -->
+      </div>
+    </div>
+
+    <!-- MAIN-PAGE END  -->
+
+
+
+
+
+
+    <!-- SCRIPTING  -->
+    <script>
+      let openBtn = document.querySelector(".opnbtn");
+      let clsbtn = document.querySelector(".closebtn");
+      let sidbar = document.querySelector(".sidebar");
+
+      clsbtn.addEventListener("click", () => {
+        sidbar.style.width = "0px";
+        sidbar.style.transition = ".5s";
+      });
+
+      openBtn.addEventListener("click", () => {
+        sidbar.style.width = "250px";
+        sidbar.style.transition = ".5s";
+      });
+    </script>
+  </body>
+</html>

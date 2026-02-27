@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.457);
+  background-image: linear-gradient(to right, #ffeaeaa1, #d3f2ffa1, #fff2cca2);
+  
+}
+.navtitle {
+  color: #434242;
+}
+
+.feedback-btn{
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: #434242;
+}
+.feedback-btn:hover{
+  border: 1px solid rgb(223, 223, 223);
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* SIDE BAR START */
+
+/* .sidebar{
+  width: 200px;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+
+} */
+
+main {
+  height: 99vh;
+  background-image: linear-gradient(to right, #ffeaea, #d3f2ff, #fff2cc);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(218, 218, 218);
+
+}
+
+.cardimg {
+  width: 150px;
+  height: 150px;
+}
+
+.Cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  /* border: solid 2px white; */
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  font-size: 1.3rem;
+  padding: 10px;
+  animation: cards 3.5s;
+}
+
+@keyframes cards {
+  from {
+    transform: translateX(1500px);
+  }
+}
+
+#card1 {
+  background-color: rgb(255, 226, 221);
+}
+#card1:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  border: 2px solid #ffffff ;
+  box-shadow: 0px 0px 30px 1px #ee8d8d;
+}
+#card2 {
+  background-color: rgb(187, 232, 255);
+}
+#card2:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+  border: 2px solid #ffffff ;
+  box-shadow: 0px 0px 30px 1px #65bef1;
+}
+#card3 {
+  background-color: rgb(249, 231, 174);
+}
+#card3:hover {
+    transform: scale(1.1);
+  transition: 0.2s;
+  border: 2px solid #ffffff ;
+  box-shadow: 0px 0px 30px 1px #ebc857;
+}
+#short {
+  width: 190px;
+  height: 150px;
+}
+.text {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #434242;
+}
+.btn {
+  /* border: solid 1px white; */
+  padding: 10px;
+  border-radius: 8px;
+  color: #434242;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#bt1 {
+  border: solid 1px white;
+}
+#bt1:hover {
+  box-shadow: 0px 0px 10px 5px rgb(238, 141, 141);
+}
+#bt2 {
+  border: solid 1px white;
+}
+#bt2:hover {
+  box-shadow: 0px 0px 10px 5px #65bef1;
+}
+#bt3 {
+  border: solid 1px white;
+}
+#bt3:hover {
+  box-shadow: 0px 0px 10px 5px #ebc857;
+}
