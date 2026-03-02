@@ -24,17 +24,24 @@
         width: 450px;
         margin: 15px;
       }
-
-      a{
-        padding: 5px;
-        font-size: 20px;
-        background-color: white;
-        border: none;
+    a {
+        border: 1px solid white;
+        padding: 10px;
+        color: #ffffffee;
+        text-decoration: none;
         border-radius: 8px;
-        color: black;
-
+        position: absolute;
+        bottom: 20px;
+      }
+      a:hover {
+        box-shadow: 0px 0px 5px 1px #ffef88;
       }
 
+      @media (max-width: 959px) {
+        .methodimg {
+          width: 200px;
+        }
+      }
       /* .methodimg:hover {
         transform: scale(1.3);
       } */
