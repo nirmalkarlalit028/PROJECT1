@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="feedback.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
+    <nav></nav>
     <form action="">
+      <a href="../index.html" class="clsbtn"
+        ><i class="fa-solid fa-square-xmark"></i
+      ></a>
+
       <h3>Feedback Form</h3>
+      <div class="inputs">
+        <h5 class="lables" for="">Name:</h5>
+        <input type="text" name="" id="name-id" placeholder="Enter Name" />
 
-      <label for="">Name:</label><br />
-      <input type="text" name="" id="" placeholder="Enter Name" /><br />
+        <h5 class="lables" for="">Email:</h5>
+        <input type="text" id="email-id" placeholder="Enter Email" />
 
-      <label for="">Email:</label><br />
-      <input
-        type="text"
-        placeholder="
-    Enter Email"
-      /><br />
+        <h5 class="lables" for="">Subject:</h5>
+        <input type="text" id="subject-id" placeholder="Enter Subject" />
 
-      <label for="">Subject:</label><br />
-      <input type="text" placeholder="Enter Subject" /><br />
-
-      <label for="">Message:</label><br />
-      <input type="text" placeholder="Enter Message" /><br />
-    
-
+        <h5 class="lables" for="">Message:</h5>
+        <input type="text" id="message-id" placeholder="Enter Message" />
+      </div>
+      <div class="btn">
+        <button class="submit-btn">Submit</button>
+      </div>
     </form>
   </body>
 </html>

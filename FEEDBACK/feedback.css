@@ -1,7 +1,76 @@
-form{
-    background-color: rgb(159, 159, 159);
-    width:500px;
+body {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  background-image: linear-gradient(to right, #ffeaeaa1, #d3f2ffa1, #fff2cca2);
 }
-label{
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 600px;
+  background-color: #f89b1141;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  border: solid 1px rgb(255, 255, 255);
+  /* background-image: linear-gradient(to right, #ffeaeaa1, #d3f2ffa1, #fff2cca2); */
+  /* align-items: center;    */
+  box-shadow: 1px 1px 50px 2px #f89c1160;
+}
+.clsbtn {
+  text-align: right;
 
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  background-color: transparent;
+}
+h3 {
+  text-align: center;
+  color: rgba(119, 79, 8, 0.592);
+  font-size: 1.8rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+}
+.lables {
+  color: rgb(142, 103, 24);
+}
+input {
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  margin: 5px;
+  color: grey;
+}
+#message-id {
+  height: 60px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.submit-btn {
+  width: 50%;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 50px;
+  padding: 7px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+  color: rgb(255, 253, 253);
+  background: radial-gradient(
+    circle,
+    rgb(235, 192, 136) 0%,
+    rgba(224, 133, 43, 0.932) 90%
+  );
 }

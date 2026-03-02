@@ -29,18 +29,9 @@ header {
   cursor: pointer;
 }
 
-/* SIDE BAR START */
-
-/* .sidebar{
-  width: 200px;
-  height: 100vh;
-  background-color: black;
-  position: fixed;
-
-} */
+/* main page */
 
 main {
-  height: 99vh;
   background-image: linear-gradient(to right, #ffeaea, #d3f2ff, #fff2cc);
   display: flex;
   flex-wrap: wrap;
