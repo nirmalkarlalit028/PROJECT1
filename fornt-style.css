@@ -72,8 +72,8 @@ main{
   border: none;
   border-radius: 15px;
   margin: 20px;
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 300px;
   font-size: 1.3rem;
   padding: 10px;
   animation: cards 3.5s;
