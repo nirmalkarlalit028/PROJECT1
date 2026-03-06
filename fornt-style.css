@@ -72,8 +72,8 @@ main{
   border: none;
   border-radius: 15px;
   margin: 20px;
-  width: 200px;
-  height: 300px;
+  width: 50%;
+  height: 50%;
   font-size: 1.3rem;
   padding: 10px;
   animation: cards 3.5s;
@@ -86,7 +86,7 @@ main{
 }
 
 #card1 {
-  background-color: rgb(255, 226, 221);
+  background-color: #ffe2dd;
 }
 #card1:hover {
   transform: scale(1.1);

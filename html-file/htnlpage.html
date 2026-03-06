@@ -1,14 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<style></style>
-</head>
-<body>
-    <h1 style="text-align: center; " >
-        Loading....
-    </h1>
-</body>
+    <link rel="stylesheet" href="html.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER START  -->
+
+    <header>
+      <img
+        class="logoimg"
+        src="https://cdn.iconscout.com/icon/free/png-512/free-html-logo-icon-svg-download-png-3028879.png?f=webp&w=512"
+        alt=""
+      />
+      <ul>
+        <li id="navi">
+          <a class="navtitle" href="#">#</a>
+          <a class="navtitle" href="">#</a>
+          <a class="navtitle" href="">#</a>
+          <a class="navtitle" href="">#</a>
+        </li>
+      </ul>
+
+      <button class="opnbtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- SIDEBAR START -->
+
+    <div class="sidebar">
+      <div class="sidebarlogo">
+        <h4 id="doc">NOTES :-</h4>
+        <button class="closebtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <li>
+        <a class="topic" href="#"></a>
+        <a class="topic" href="#"></a>
+        <a class="topic" href="#"></a>
+        <a class="topic" href="#"></a>
+      </li>
+    </div>
+
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN-PAGE START  -->
+
+    <div class="main">
+      <h1 class="center-text">HTML</h1>
+      <p class="text">
+        <strong>DEFINITION :-</strong><br />
+        HTML (HyperText Markup Language) is the standard markup language used to
+        structure content and create web pages that are displayed in a web
+        browser. It uses tags and attributes to define elements like text,
+        images, and links, forming the "skeleton" of a webpage.
+      </p>
+      <div class="homebtns">
+        <a class="HOME" href="../index.html">HOME</a>
+        <!-- <a class="HOME" href="../index.html">BACK-END</a> -->
+      </div>
+    </div>
+
+    <!-- MAIN-PAGE END  -->
+
+    <!-- SCRIPTING  -->
+    <script>
+      let openBtn = document.querySelector(".opnbtn");
+      let clsbtn = document.querySelector(".closebtn");
+      let sidbar = document.querySelector(".sidebar");
+
+      clsbtn.addEventListener("click", () => {
+        sidbar.style.width = "0px";
+        sidbar.style.transition = ".5s";
+      });
+
+      openBtn.addEventListener("click", () => {
+        sidbar.style.width = "250px";
+        sidbar.style.transition = ".5s";
+      });
+    </script>
+  </body>
 </html>
