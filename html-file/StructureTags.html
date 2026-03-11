@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #ffe2dd;
+      }
+
+      /* HEADER START */
+
+      header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        background-color: #16161606;
+        padding: 8px;
+      }
+
+      .logoimg {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+      #navi {
+        display: flex;
+      }
+      .navtitle {
+        margin: 40px;
+        font-size: 1.2rem;
+        color: #3b2806ee;
+
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+      }
+      .navtitle:hover {
+        box-shadow: 0px 0px 5px 1px #ee8d8d;
+        border: solid 1px #ee8d8d;
+        transform: scale(1.1);
+      }
+
+      .opnbtn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: solid 1px;
+        cursor: pointer;
+        padding: 5px;
+        animation: openbtn 5s infinite;
+        color: #3b2806ee;
+        background-color: transparent;
+      }
+      .opnbtn:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 5px 1px #ee8d8d;
+      }
+
+      /* HEADER END */
+
+      /* SIDEBAR START */
+      .sidebar {
+        /* width 0 krna hai */
+        width: 0px;
+        height: 99vh;
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+      }
+      .sidebarlogo {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 14px;
+      }
+      #doc {
+        color: #ee8d8d;
+      }
+
+      .closebtn {
+        border: none;
+        font-size: 1.5rem;
+        animation: openbtn 5s infinite;
+        color: #ee8d8d;
+        background-color: transparent;
+      }
+      .closebtn:hover {
+        transform: scale(1.1);
+        /* box-shadow: 0px 0px 5px 1px #839977; */
+      }
+
+      li {
+        text-decoration: none;
+      }
+
+      .topic {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 12px;
+        border: solid 1px;
+        padding: 5px;
+      }
+      .topic:hover {
+        box-shadow: 0px 0px 5px 1px #ee8d8d;
+    }
+    
+    /* SIDEBAR END */
+    
+    /* MAIN PAGE START */
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
+        align-items: center;
+    }
+    .main-text {
+        font-size: 1.2rem;
+        width: 700px;
+        height: 500px;
+        line-height: 2.3;
+        margin: 10px;
+        padding: 15px;
+        color: #3b2806ee;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 1px #a74f4f;
+        /* box-shadow: 0px 0px 5px 1px #ee8d8d; */
+      }
+      h1{
+        text-align: center;
+        color: #3b2806ee;
+      }
+
+      /* MAIN PAGE END */
+
+      /* RESPONSIVE WINDOW */
+
+      @media (max-width: 907px) {
+        .navtitle {
+          display: none;
+        }
+        .opnbtn {
+          display: block;
+        }
+        .center-text,
+        .text {
+          font-size: 1rem;
+        }
+      }
+      @media (min-width: 907px) {
+        .center-text {
+          width: 30%;
+        }
+        .text {
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER START  -->
+
+    <header>
+      <img
+        class="logoimg"
+        src="https://cdn.iconscout.com/icon/free/png-512/free-html-logo-icon-svg-download-png-3028879.png?f=webp&w=512"
+        alt=""
+      />
+      <ul>
+        <li id="navi">
+          <a class="navtitle" href="htnlpage.html">Home</a>
+          <a class="navtitle" href="">Block-level Elements</a>
+          <a class="navtitle" href="">Inline Elements</a>
+          <!-- <a class="navtitle" href="#">Container Tags</a>
+          <a class="navtitle" href="">Empty Tags</a>
+          <a class="navtitle" href="">Formatting Tags</a>
+          <a class="navtitle" href="">Semantic Tags</a>
+          <a class="navtitle" href="">Multimedia Tags</a> -->
+        </li>
+      </ul>
+
+      <button class="opnbtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- SIDEBAR START -->
+
+    <div class="sidebar">
+      <div class="sidebarlogo">
+        <h4 id="doc">NOTES :-</h4>
+        <button class="closebtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <li>
+        <a class="topic" href="">Block-level Elements</a>
+        <a class="topic" href="">Inline Elements</a>
+        <a class="topic" href="htnlpage.html">Home</a>
+        <!-- <a class="topic" href=""></a> -->
+      </li>
+    </div>
+
+    <!-- SIDEBAR END -->
+    <div class="main-container">
+      <div class="main-text">
+        <h1>Basic / Structure Tag</h1>
+        <p>
+          1. <strong>DOCTYPE HTML</strong> - This declaration tells the browser that the document
+          is an HTML5 file. <br />
+          2. <strong>HTML</strong> - The "root" element that wraps all other content on the
+          entire page. <br />
+          3. <strong>HEAD</strong> - A container for metadata (information about the page) that
+          doesn't appear to viewers, such as the title and links to CSS. <br />
+          4. <strong>TITLE</strong> - Located inside the head, this sets the name of the page
+          shown on the browser tab. <br />
+          5. <strong>BODY</strong> - This contains all the visible content, including text,
+          images, buttons, and links. <br />
+        </p>
+      </div>
+    </div>
+    <!-- SCRIPTING  -->
+    <script>
+      let openBtn = document.querySelector(".opnbtn");
+      let clsbtn = document.querySelector(".closebtn");
+      let sidbar = document.querySelector(".sidebar");
+
+      clsbtn.addEventListener("click", () => {
+        sidbar.style.width = "0px";
+        sidbar.style.transition = ".5s";
+      });
+
+      openBtn.addEventListener("click", () => {
+        sidbar.style.width = "250px";
+        sidbar.style.transition = ".5s";
+      });
+    </script>
+  </body>
+</html>
